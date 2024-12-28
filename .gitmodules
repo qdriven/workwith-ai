@@ -1,3 +1,6 @@
 [submodule "projects/fe-starter"]
 	path = projects/fe-starter
 	url = https://github.com/fluent-qa/fe-next-starter.git
+[submodule "qpyway"]
+	path = qpyway
+	url = https://github.com/fluent-qa/daily-python.git
