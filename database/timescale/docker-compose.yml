@@ -1,0 +1,17 @@
+name: timescaledb
+# docker run -d --name timescaledb -p 5432:5432 -e POSTGRES_PASSWORD=password timescale/timescaledb-ha:pg16
+services:
+  postgres:
+    container_name: timescaledb
+    image: timescale/timescaledb:latest-pg16
+    env_file:
+      - .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeit}
+    volumes:
+      #  - ./data/postgres:/home/postgres/pgdata/data
+      - ./data/postgres:/home/postgres
+    ports:
+      - "${POSTGRES_PORT:-7432}:7432"
+    restart: unless-stopped
