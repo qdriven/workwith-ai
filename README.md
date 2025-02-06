@@ -17,7 +17,10 @@ Recommendation:
 Docker/Docker-compose/Run Scripts:
 
 - [X] [supabase](./database/supabase/docker/docker-compose.yaml)Database and Backend as Service
-- [X] [metabase](./bi/metabase/docker/docker-compose.yaml)Metabase BI Dashboard
+- [X] [metabase](./database/bi/metabase/docker/docker-compose.yaml)Metabase BI Dashboard
+- [X] [Postgresql](./database/postgresql/docker-compose.yaml) postgresql database
+- [X] [Duckdb](./database/duckdb/docker-compose.yaml)timeseries duck db
+- [X] [timescale](./database/timescale/docker-compose.yaml)timescale database
 
 
 
