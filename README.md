@@ -1,21 +1,24 @@
-# README
+# Self Stacks For Dev/QA/Startup
 
-Work with AI experiements,from editor usage to build projects.
-The purpose of these experiemtns is:
-1. What AI tools can help?
-2. How AI tools help?
-3. Learning from doing
+A Collection of Docker-Compose or self setup script for easy setup your working environment.
+It is not only for Dev but also for Software QA,Project Management,or startup company.
 
-## Project based experiements Stories
+Most of cases are used in my daily work, and it works pretty well in both a small startup company and my
+daily work.
 
-- [] How to build a Cheatsheet Website without sound frontend skill
+## Database-BI Infrastructure
+
+Recommendation:
+
+1. Database: Postgresql works well in almost all the cases.
+2. Database/Backend Service: Supabase rocks, easy to setup and API exposed directly after data is ready
+3. BI: metabase is easy to setup,use or compose different dashboards
+
+Docker/Docker-compose/Run Scripts:
+
+- [X] [supabase](./database/supabase/docker/docker-compose.yaml)Database and Backend as Service
+- [X] [metabase](./bi/metabase/docker/docker-compose.yaml)Metabase BI Dashboard
 
 
-## Ideas:
 
-- [][90DaysOfDevOps](https://github.com/MichaelCade/90DaysOfDevOps/)
-
-## Personal Libs.
-
-- [python](https://github.com/fluent-qa/daily-python.git) python libs
-- [typescript](https://github.com/qdriven/mono-ts-starter.git) typescript libs
+## Test/QA Infrastructure
