@@ -1,6 +1,6 @@
+#!/bin/sh
+docker run -d -p 30010:3000 -v /root/metabase/metabase.db:/metabase.db --name metabase metabase/metabase
 
-docker run -d -p 3000:3000 --name metabase metabase/metabase \
-    -v ./data:/metabase-data
 # User/Password: abc@test.com/QA123987
 # docker run -d -p 3000:3000 \
 #   -e "MB_DB_TYPE=postgres" \
@@ -15,3 +15,5 @@ docker run -d -p 3000:3000 --name metabase metabase/metabase \
 #   -v ~/metabase-data:/metabase-data \
 #   -e "MB_DB_FILE=/metabase-data/metabase.db" \
 #   --name metabase metabase/metabase
+
+
