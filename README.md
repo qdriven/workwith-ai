@@ -1,4 +1,24 @@
-# Self Stacks For Dev/QA/Startup
+# Work With AI
+
+After have some try, I think it the time to change the repo purpose.
+The reason is previous repo just try to focuse on QA/Software Testing, But now in AI Age,
+It should be about create project and coding leverage existing framework, open source repo, and AI related projects
+to build various real projects in a shocking pace.
+
+So this repo is about building various real projects in a shocking pace:
+
+1. Collection of Docker-Compose or self setup script for easy setup your working environment.
+2. Collection of Self-Made projects leveraging existing framework, open source repo, and AI related projects
+
+And also I changed my mind about just collect docker images files, but from real project to collect infra script from time to time.
+
+## QA/Software Testing
+
+- [] QA Testing Management System
+- [] QA Automation Framework
+- [] QA API Recording Tools
+
+## Self Stacks For Dev/QA/Startup
 
 A Collection of Docker-Compose or self setup script for easy setup your working environment.
 It is not only for Dev but also for Software QA,Project Management,or startup company.
