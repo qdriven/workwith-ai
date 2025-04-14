@@ -1,0 +1,4 @@
+volumes/*
+models/*
+dify-main/*
+dify/

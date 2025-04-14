@@ -1,0 +1,13 @@
+version: '3.6'
+services: 
+  nocodb: 
+    environment: 
+      NC_DB: "pg://supabase_db_dev-stacks.orb.local:5432?u=postgres&p=postgres&d=nocodb"
+    image: "nocodb/nocodb:latest"
+    ports: 
+      - "9090:8080"
+    restart: always
+
+
+# suparagent@abc.com/password
+# test@abc.com/password
