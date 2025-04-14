@@ -1,0 +1,24 @@
+fluent/
+.idea/
+# ai-llmops/
+volumns/
+videos/
+logs/
+*.log
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+*.egg
+*.egg-info
+*.egg-info/
+*.egg-info/PKG-INFO
+*.egg-info/SOURCES.txt
+*.egg-info/dependency_links.txt
+*.egg-info/entry_points.txt
+*.egg-info/requires.txt
+*.egg-info/top_level.txt
+*.egg-info/zip-safe
+*.egg-info/manifest
+networks/
+hustle/
