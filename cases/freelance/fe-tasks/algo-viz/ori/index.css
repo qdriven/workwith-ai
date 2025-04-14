@@ -1,0 +1,32 @@
+
+
+/* Container for entire page */
+#main-container{
+	width: 100%;
+	position: relative;
+	min-height: 100%;
+}
+
+
+
+/* Middle section (graph elements) */
+
+#graph-container{
+	margin: 0 auto;
+	width: 95%;
+	max-width: 700px;
+	color: #fff;
+	font-size: 13px;
+}
+
+#graph{
+	cursor: pointer;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 500px){
+	#graph-container{
+		font-size: 50px;
+	}
+}
