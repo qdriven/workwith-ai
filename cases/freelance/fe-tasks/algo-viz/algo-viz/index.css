@@ -173,3 +173,81 @@ select, input[type="range"] {
     r: 6;
     cursor: pointer;
 }
+
+.algorithm-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.algorithm-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.algorithm-option input[type="checkbox"] {
+    margin: 0;
+}
+
+.algorithm-option label {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.algorithm-color-block {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.algorithm-color-sgd {
+    background-color: #ff5722;  /* Orange */
+}
+
+.algorithm-color-momentum {
+    background-color: #2196f3;  /* Blue */
+}
+
+.algorithm-color-rmsprop {
+    background-color: #4caf50;  /* Green */
+}
+
+.algorithm-color-adam {
+    background-color: #9c27b0;  /* Purple */
+}
+
+.algorithm-color-nag {
+    background-color: #ffeb3b;  /* Yellow */
+}
+
+/* Color coding for algorithm paths */
+.optimization-path-group-sgd {
+    stroke: #ff5722;  /* Orange */
+}
+
+.optimization-path-group-momentum {
+    stroke: #2196f3;  /* Blue */
+}
+
+.optimization-path-group-rmsprop {
+    stroke: #4caf50;  /* Green */
+}
+
+.optimization-path-group-adam {
+    stroke: #9c27b0;  /* Purple */
+}
+
+.optimization-path-group-nag {
+    stroke: #ffeb3b;  /* Yellow */
+}
+
+.algorithm-label {
+    font-size: 12px;
+    font-weight: bold;
+    pointer-events: none;
+}

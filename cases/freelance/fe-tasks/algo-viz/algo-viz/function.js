@@ -40,7 +40,13 @@ window.functionMinima = {
     ],
     beale: [
         { x: 3.0, y: 0.5 }
-    ]
+    ],
+	threehumpcamel: [
+		{ x: 0.0, y: 0.0 }
+	],
+	matyas: [
+		{ x: 0.0, y: 0.0 }
+	]
 };
 
 // Update currentMinima reference
@@ -185,7 +191,18 @@ function zoomed() {
     // Update paths and points with the new transform
     window.graphArea.selectAll(".optimization-path-group")
         .attr("transform", d3.event.transform);
+        
     window.graphArea.selectAll("#current-point")
+        .attr("transform", d3.event.transform);
+        
+    // Update algorithm-specific points and final points
+    window.graphArea.selectAll("[id^='current-point-']")
+        .attr("transform", d3.event.transform);
+        
+    window.graphArea.selectAll(".final-point")
+        .attr("transform", d3.event.transform);
+        
+    window.graphArea.selectAll(".start-point-marker")
         .attr("transform", d3.event.transform);
 
     // Hide coordinate display while zooming
@@ -479,3 +496,37 @@ function reDraw(){
 }
 
 window.addEventListener("resize", reDraw);
+
+// Add event listeners for algorithm checkboxes
+document.addEventListener('DOMContentLoaded', function() {
+    // Find all algorithm checkboxes
+    const algoCheckboxes = document.querySelectorAll('.algorithm-option input[type="checkbox"]');
+    
+    // Add event listeners to each checkbox
+    algoCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateAlgorithmDescription);
+    });
+    
+    // Initial algorithm description update (SGD is checked by default)
+    updateAlgorithmDescription();
+});
+
+// Function to update algorithm description based on selected checkboxes
+function updateAlgorithmDescription() {
+    const descriptionElement = document.getElementById('algorithm-description');
+    const selectedAlgorithms = getSelectedAlgorithms();
+    
+    if (selectedAlgorithms.length === 0) {
+        descriptionElement.textContent = "Please select at least one algorithm.";
+        return;
+    }
+    
+    if (selectedAlgorithms.length === 1) {
+        // If only one algorithm is selected, show its description
+        const algorithm = selectedAlgorithms[0];
+        descriptionElement.textContent = algorithmInfo[algorithm].description;
+    } else {
+        // If multiple algorithms are selected, show a comparison message
+        descriptionElement.textContent = "Multiple algorithms selected. Compare their convergence patterns.";
+    }
+}

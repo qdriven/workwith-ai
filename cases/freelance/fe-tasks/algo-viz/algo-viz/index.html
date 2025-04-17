@@ -17,18 +17,41 @@
 						<option value="rosenbrock">Rosenbrock Function</option>
 						<option value="booth">Booth Function</option>
 						<option value="beale">Beale Function</option>
+						<option value="threehumpcamel">Three-Hump Camel Function</option>
+						<option value="matyas">Matyas Functionl</option>
 					</select>
 					<div id="function-description" style="font-size: 12px; margin-bottom: 20px;"></div>
 				</div>
 
 				<div class="control-group">
-					<h3>Algorithm</h3>
-					<select id="algorithm-select" style="width: 100%; margin-bottom: 15px;">
-						<option value="sgd">SGD</option>
-						<option value="momentum">SGD with Momentum</option>
-						<option value="rmsprop">RMSProp</option>
-						<option value="adam">Adam</option>
-					</select>
+					<h3>Algorithms</h3>
+					<div class="algorithm-options">
+						<div class="algorithm-option">
+							<input type="checkbox" id="algo-sgd" value="sgd" checked>
+							<span class="algorithm-color-block algorithm-color-sgd"></span>
+							<label for="algo-sgd">SGD</label>
+						</div>
+						<div class="algorithm-option">
+							<input type="checkbox" id="algo-momentum" value="momentum">
+							<span class="algorithm-color-block algorithm-color-momentum"></span>
+							<label for="algo-momentum">SGD with Momentum</label>
+						</div>
+						<div class="algorithm-option">
+							<input type="checkbox" id="algo-rmsprop" value="rmsprop">
+							<span class="algorithm-color-block algorithm-color-rmsprop"></span>
+							<label for="algo-rmsprop">RMSProp</label>
+						</div>
+						<div class="algorithm-option">
+							<input type="checkbox" id="algo-adam" value="adam">
+							<span class="algorithm-color-block algorithm-color-adam"></span>
+							<label for="algo-adam">Adam</label>
+						</div>
+						<div class="algorithm-option">
+							<input type="checkbox" id="algo-nag" value="nag">
+							<span class="algorithm-color-block algorithm-color-nag"></span>
+							<label for="algo-nag">Nesterov Accelerated Gradient</label>
+						</div>
+					</div>
 					<div id="algorithm-description" style="font-size: 12px; margin-bottom: 20px;"></div>
 				</div>
 
@@ -71,7 +94,6 @@
 		<script src="d3-contour-v1-min.js"></script>
 		<script src="data.js"></script>
 		<script src="drawft.js"></script>
-		<script src="nm.js"></script>
 		<script src="function.js"></script>
 	</body>
 </html>
