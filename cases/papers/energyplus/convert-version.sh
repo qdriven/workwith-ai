@@ -1,0 +1,1 @@
+python EnergyPlusToFMU-v3.1.0/Scripts/EnergyPlusToFMU.py -i "/Applications/EnergyPlus-24-2-0/Energy+.idd" -w "./data/USA_AK_Fairbanks.Intl.AP.702610_TMY3.epw" -a 2.0 "./data/ASHRAE901_OfficeLarge_STD2019_Albuquerque.idf"
